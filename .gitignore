@@ -1,0 +1,17 @@
+# Generated TypeScript output
+/*.js
+/*.js.map
+/*.d.ts
+/*.d.ts.map
+
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
