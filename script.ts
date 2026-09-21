@@ -8,6 +8,7 @@
 // primitives and reference
 // [] {} () -> reference types
 
-let a= 12;
-let arr = [1, 2, 3, 4, "hello",{key: "value"}];
-let arr2: number[] = [1, 2, 3, 4];
+// tuples
+let arr: [string, number] = ["Orange", 22];
+
+let arr2:[number, string]=[19, "Apple"];
