@@ -1,4 +1,5 @@
 # Generated TypeScript output
+/dist/
 /*.js
 /*.js.map
 /*.d.ts
@@ -15,3 +16,9 @@ node_modules/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Keep TypeScript and HTML source files in classes; ignore generated/other files
+/classes/*
+!/classes/**/*.ts
+!/classes/**/*.html
+/classes/**/*.d.ts
