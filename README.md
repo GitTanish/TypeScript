@@ -1,6 +1,50 @@
 # TypeScript Learning Reference
 
-A personal log of everything learned while studying TypeScript — organized for quick lookup later.
+A small TypeScript learning repository with focused examples for the language's core type and object-oriented features. The compiled JavaScript and declaration files are checked in alongside the source so each lesson can be inspected from both sides of the compiler.
+
+## Project Layout
+
+| Path | Topics |
+| --- | --- |
+| `script.ts` | Primitive and reference types, tuples, enums, `unknown`, `void`, `null`, and `never` |
+| `script2.ts` | Type inference and type annotations |
+| `script3.ts` | Interfaces, optional properties, interface extension and merging, type aliases, and intersections |
+| `classes/script4.ts` | Classes, constructors, parameter properties, defaults, and access modifiers |
+
+The generated `.js`, `.d.ts`, and source map files show the compiler output for the examples. The `classes` directory has its own `tsconfig.json` because it is a separate lesson area.
+
+## Prerequisites
+
+- Node.js
+- TypeScript (`tsc`)
+
+Install TypeScript globally if it is not already available:
+
+```bash
+npm install --global typescript
+```
+
+Check the installation:
+
+```bash
+tsc --version
+```
+
+## Compile the Examples
+
+Compile the root-level lessons with the root configuration:
+
+```bash
+tsc --project tsconfig.json
+```
+
+Compile the classes lesson:
+
+```bash
+tsc --project classes/tsconfig.json
+```
+
+To type-check without writing generated files, add `--noEmit` to either command.
 
 ---
 
