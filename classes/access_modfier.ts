@@ -1,24 +1,14 @@
-class BottleMaker2{
-    constructor(public name:string){
-        this.name = name;
-    }
+//protect
+class bottlemaker {
+    protected name='Parrot'
+}
 
-    changing() {
-        this.name ='lalala' // we can change the name because it is public
+class MetalBottle extends bottlemaker {
+    public material="metal";
+    changName(){
+        this.name="new name";
     }
 }
 
-class MetalBottleMaker2 extends BottleMaker2{
-    constructor(public name:string){
-        super(name);
-    }
-
-    getValue(){
-        console.log(this.name); // we can access the name because it is public
-    }
-}
-
-
-let b4= new MetalBottleMaker2("clinton");
-b4.name = "Hululu"; // we can change the name because it is public
-b4.getValue(); // we can access the name because it is public 
+let b4 = new MetalBottle();
+b4.name = "new name"; // Error: Property 'name' is protected and only accessible within class 'bottlemaker' and its subclasses.
