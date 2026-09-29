@@ -11,7 +11,7 @@
 
 class BottleMaker{
     constructor(public name: string, public price: number) {
-
+        this.name;
     }
 } 
 let b1 =new BottleMaker("Milton", 1200); // 'new' constructor invocation + object creation
