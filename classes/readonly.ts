@@ -1,10 +1,10 @@
 class User{
     constructor(public readonly name: string) {}
 
-        changeName(){
-            this.name = 'hellow';
+        getName(){
+            return this.name;
         }
 }
 
 let user1 = new User('John');
-user1.changeName();
+user1.getName();
