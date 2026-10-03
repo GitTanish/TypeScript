@@ -1,24 +1,45 @@
 # TypeScript Learning Reference
 
-A small TypeScript learning repository with focused examples for the language's core type and object-oriented features. The compiled JavaScript and declaration files are checked in alongside the source so each lesson can be inspected from both sides of the compiler.
+This repository is a small TypeScript practice workspace used to explore core language features, type safety, and object-oriented patterns. Each lesson is stored as a TypeScript source file, and the generated JavaScript and declaration output is included so you can compare the source with the compiled result.
 
-## Project Layout
+## Repository Structure
 
-| Path | Topics |
+| Path | Focus |
 | --- | --- |
 | `script.ts` | Primitive and reference types, tuples, enums, `unknown`, `void`, `null`, and `never` |
-| `script2.ts` | Type inference and type annotations |
-| `script3.ts` | Interfaces, optional properties, interface extension and merging, type aliases, and intersections |
-| `classes/script4.ts` | Classes, constructors, parameter properties, defaults, and access modifiers |
+| `script2.ts` | Type inference and explicit type annotations |
+| `script3.ts` | Interfaces, optional properties, interface extension, declaration merging, type aliases, and intersections |
+| `classes/script4.ts` | Class basics, constructors, parameter properties, and access modifiers |
+| `classes/access_modfier.ts` | `public`, `private`, and `protected` access control |
+| `classes/getter_setters.ts` | Getters and setters |
+| `classes/static_members.ts` | Static class members |
+| `classes/abstract_classes.ts` | Abstract classes and abstract methods |
+| `classes/readonly.ts` | `readonly` properties |
+| `classes/parameter_properties.ts` | Constructor parameter properties |
 
-The generated `.js`, `.d.ts`, and source map files show the compiler output for the examples. The `classes` directory has its own `tsconfig.json` because it is a separate lesson area.
+## Topics Covered
+
+- Basic TypeScript types and values
+- Type inference and explicit annotations
+- Objects, arrays, tuples, and enums
+- `any`, `unknown`, `void`, `null`, `undefined`, and `never`
+- Interfaces and interface extension
+- Type aliases and intersections
+- Declaration merging
+- Classes and object-oriented programming
+- Constructors and parameter properties
+- Access modifiers (`public`, `private`, `protected`)
+- `readonly` properties
+- Getters and setters
+- Static members
+- Abstract classes
 
 ## Prerequisites
 
 - Node.js
-- TypeScript (`tsc`)
+- TypeScript CLI (`tsc`)
 
-Install TypeScript globally if it is not already available:
+Install TypeScript globally:
 
 ```bash
 npm install --global typescript
@@ -30,122 +51,28 @@ Check the installation:
 tsc --version
 ```
 
-## Compile the Examples
+## Compile the Project
 
-Compile the root-level lessons with the root configuration:
+Compile the root-level lessons:
 
 ```bash
 tsc --project tsconfig.json
 ```
 
-Compile the classes lesson:
+Compile the class-based lesson set:
 
 ```bash
 tsc --project classes/tsconfig.json
 ```
 
-To type-check without writing generated files, add `--noEmit` to either command.
-
----
-
-## Table of Contents
-
-- [Setup](#setup)
-- [Types](#types)
-- [Functions](#functions)
-- [Interfaces & Type Aliases](#interfaces--type-aliases)
-- [Classes](#classes)
-- [Generics](#generics)
-- [Utility Types](#utility-types)
-- [Modules](#modules)
-- [Enums](#enums)
-- [Type Narrowing & Guards](#type-narrowing--guards)
-- [Async / Promises](#async--promises)
-- [Miscellaneous](#miscellaneous)
-
----
-
-## Setup
+To type-check without emitting files, add `--noEmit`:
 
 ```bash
-# Install TypeScript globally
-npm install -g typescript
-
-# Check version
-tsc --version
-
-# Initialize a tsconfig
-tsc --init
-
-# Compile a file
-tsc file.ts
-
-# Watch mode
-tsc --watch
+tsc --project tsconfig.json --noEmit
 ```
 
----
+## Notes
 
-## Types
-
-> _Notes go here_
-
----
-
-## Functions
-
-> _Notes go here_
-
----
-
-## Interfaces & Type Aliases
-
-> _Notes go here_
-
----
-
-## Classes
-
-> _Notes go here_
-
----
-
-## Generics
-
-> _Notes go here_
-
----
-
-## Utility Types
-
-> _Notes go here_
-
----
-
-## Modules
-
-> _Notes go here_
-
----
-
-## Enums
-
-> _Notes go here_
-
----
-
-## Type Narrowing & Guards
-
-> _Notes go here_
-
----
-
-## Async / Promises
-
-> _Notes go here_
-
----
-
-## Miscellaneous
-
-> _Notes go here_
+- The generated `.js`, `.d.ts`, and `.map` files are kept in the repository for reference.
+- The `classes` folder has its own `tsconfig.json` because it is treated as a separate lesson area.
+- This project is intended for learning and experimentation rather than production use.
