@@ -9,6 +9,7 @@ This repository is a small TypeScript practice workspace used to explore core la
 | `script.ts` | Primitive and reference types, tuples, enums, `unknown`, `void`, `null`, and `never` |
 | `script2.ts` | Type inference and explicit type annotations |
 | `script3.ts` | Interfaces, optional properties, interface extension, declaration merging, type aliases, and intersections |
+| `functions/intro.ts` | Callback functions, optional and default parameters, and rest parameters |
 | `classes/script4.ts` | Class basics, constructors, parameter properties, and access modifiers |
 | `classes/access_modfier.ts` | `public`, `private`, and `protected` access control |
 | `classes/getter_setters.ts` | Getters and setters |
@@ -26,6 +27,8 @@ This repository is a small TypeScript practice workspace used to explore core la
 - Interfaces and interface extension
 - Type aliases and intersections
 - Declaration merging
+- Function types and callbacks
+- Optional, default, and rest parameters
 - Classes and object-oriented programming
 - Constructors and parameter properties
 - Access modifiers (`public`, `private`, `protected`)
@@ -53,7 +56,7 @@ tsc --version
 
 ## Compile the Project
 
-Compile the root-level lessons:
+Compile the root-level lessons and the functions lesson:
 
 ```bash
 tsc --project tsconfig.json
